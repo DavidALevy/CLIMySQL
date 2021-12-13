@@ -33,5 +33,4 @@ const Actor=sequelize.define("Actor",{
 Movie.hasOne(Actor);
 Actor.belongsTo(Movie);
 
-module.exports=Actor;
-module.exports=Movie;
+module.exports={Actor,Movie}
