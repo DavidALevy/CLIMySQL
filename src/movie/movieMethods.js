@@ -1,5 +1,5 @@
-const Actor = require("./movieModels");
-const Movie=require("./movieModels");
+const {Actor,Movie} = require("./movieModels");
+
 
 exports.addMovie=async(movieObj)=>{
 try{console.log(movieObj)
