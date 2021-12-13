@@ -17,20 +17,21 @@ const Movie=sequelize.define("Movie",{
 );
 
 
-const Actor=sequelize.define("Actor",{
-    actor:{
-        type: DataTypes.STRING,
-        allowNull:false       
-    },
-    DOB:{
-        type: DataTypes.INTEGER,
-    },
+// const Actor=sequelize.define("Actor",{
+//     actor:{
+//         type: DataTypes.STRING,
+//         allowNull:false       
+//     },
+//     DOB:{
+//         type: DataTypes.INTEGER,
+//     },
     
-},{tableName:'ActorX'}
+// },{tableName:'ActorX'}
 
-);
+// );
 
-Movie.hasOne(Actor);
-Actor.belongsTo(Movie);
+// Movie.hasOne(Actor);
+// Actor.belongsTo(Movie);
 
-module.exports={Actor,Movie}
+module.exports={Movie}
+//module.exports={Actor}
